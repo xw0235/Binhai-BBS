@@ -1,3 +1,4 @@
-# PHP Á·Ï°Ð¡ÏîÄ¿
-MessageBoard -> ¼òµ¥ÁôÑÔ°å
-RegisterAndLogin -> ÓÃ»§×¢²áµÇÂ¼
+# PHP ç»ƒä¹ å°é¡¹ç›®
+MessageBoard -> ç®€å•ç•™è¨€æ¿
+
+RegisterAndLogin -> ç”¨æˆ·æ³¨å†Œç™»å½•
