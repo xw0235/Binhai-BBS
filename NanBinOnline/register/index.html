@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Load page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <style type="text/css">
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:12px;
+            color:#666666;
+            background:#fff;
+            text-align:center;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        a{
+            color:#1e7ace;
+            text-decoration:none;
+        }
+        a:hover{
+            color:#000;
+            text-decoration:underline;
+        }
+        h3{
+            font-size:14px;
+            font-weight:bold;
+        }
+        pre, p{
+            color: #1e7ace;
+            margin:4px;
+        }
+        input, select, textarea{
+            padding:1px;
+            margin:2px;
+            font-size:11px;
+        }
+        #myform{
+            width:450px;
+            margin:15px auto;
+            padding:20px;
+            text-align:left;
+            border:1px solid #a4cdf2;
+        }
+        fieldset{
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #a4cdf2;
+            background:#fff;
+        }
+        fieldset legend{
+            color:#1e7ace;
+            font-weight:bold;
+            padding:3px 20px 3px 20px;
+            border:1px solid #a4cdf2;
+            background:#fff;
+        }
+        fieldset label{
+            float:left;
+            width:120px;
+            text-align:right;
+            padding:4px;
+            margin:1px;
+        }
+        fieldset div{
+            clear:left;
+            margin-bottom:2px;
+        }
+        .buttom{
+            padding:1px 10px;
+            font-size:12px;
+            border:1px #1e7ace solid;
+            background:#d0f0ff;
+        }
+        .input{
+            width:120px;
+        }
+        .enter{
+            text-align:center;
+        }
+        .clear{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+<div id="myform">
+    <center><h3>创建新用户</h3></center>
+    <form method="post" name="myForm" id="" action="register.php">
+        <fieldset>
+            <legend>用户注册</legend>
+            <div>
+                <label for="Name">用户名</label>
+                <input type="text" name="username" class="input" id="username" size="20" maxlength="30"/>
+                *(可输入字母数组下划线)<br>
+            </div>
+            <div>
+                <label for="password">输入密码</label>
+                <input type="password" name="password" class="input" id="password" size="18" maxlength="15"/>
+                *(长度不能超过15个字符)<br>
+            </div>
+            <div class="enter">
+                <input name="submit" type="submit" class="buttm" value="提交"/>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+</div>
+</body>
+</html>
