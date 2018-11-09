@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+header("Content-Type: text/html;charset=utf-8");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -10,7 +13,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>南滨在线</title>
+    <title>校园虚拟交互平台</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -44,22 +47,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">南滨在线</a>
+          <a class="navbar-brand" href="index.php">校园虚拟交互平台</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">首页</a></li>
-            <li class="active"><a href="/Demo/messageboard/index.php">在线交流</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <?php
                 if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-                    echo "<li><a herf='#'>" . $_SESSION['username'] . "</a></li>";
+                    echo "<li><a herf=''>" . $_SESSION['username'] . "</a></li><li><a href=\"./user/index.php\">个人中心</a></li><li><a href=\"./login/loginout.php\">注销</a></li>";
                 } else {
-                    echo "<li><a href='/Demo/login/index.html'>登陆</a></li><li><a href='/Demo/register/index.html'>注册</a></li>";
+                    echo "<li><a href='./login/index.html'>登陆</a></li><li><a href='./register/index.html'>注册</a></li>";
                 }
               ?>
-			<li><a href="/Demo/login/loginout.php">注销</a></li>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -69,8 +71,18 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>NanKaiBinHai Online</h1>
-        <p>欢迎访问南滨在线</p>
+          <p># 准备实现啥功能？</p>
+          <p>- 添加几个管理员账号</p>
+          <p>- 用户注册时需要管理员认证 (邮箱认证)</p>
+
+          <hr />
+          <hr />
+          <p>下面这里放AR实景, 暂时还没有...</p>
+          <p>不过可以用百度地图</p>
+          <a href="map.html">南开大学滨海学院 - 百度地图</a>
+          <!-- 调用百度地图API -->
+          <!--  <iframe src="./map.html" width="600" height="300" frameborder="0" scrolling="no"></iframe> -->
+
       </div>
 
     </div> <!-- /container -->

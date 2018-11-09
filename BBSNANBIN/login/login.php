@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+header("Content-Type: text/html;charset=utf-8");
 $username = htmlspecialchars($_POST['username']);  
 $password = $_POST['password'];  
    

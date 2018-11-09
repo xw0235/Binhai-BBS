@@ -1,111 +1,53 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <title>Load page</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-    <style type="text/css">
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:12px;
-            color:#666666;
-            background:#fff;
-            text-align:center;
-        }
-        *{
-            margin:0;
-            padding:0;
-        }
-        a{
-            color:#1e7ace;
-            text-decoration:none;
-        }
-        a:hover{
-            color:#000;
-            text-decoration:underline;
-        }
-        h3{
-            font-size:14px;
-            font-weight:bold;
-        }
-        pre, p{
-            color: #1e7ace;
-            margin:4px;
-        }
-        input, select, textarea{
-            padding:1px;
-            margin:2px;
-            font-size:11px;
-        }
-        #myform{
-            width:450px;
-            margin:15px auto;
-            padding:20px;
-            text-align:left;
-            border:1px solid #a4cdf2;
-        }
-        fieldset{
-            padding:10px;
-            margin-top:5px;
-            border:1px solid #a4cdf2;
-            background:#fff;
-        }
-        fieldset legend{
-            color:#1e7ace;
-            font-weight:bold;
-            padding:3px 20px 3px 20px;
-            border:1px solid #a4cdf2;
-            background:#fff;
-        }
-        fieldset label{
-            float:left;
-            width:120px;
-            text-align:right;
-            padding:4px;
-            margin:1px;
-        }
-        fieldset div{
-            clear:left;
-            margin-bottom:2px;
-        }
-        .buttom{
-            padding:1px 10px;
-            font-size:12px;
-            border:1px #1e7ace solid;
-            background:#d0f0ff;
-        }
-        .input{
-            width:120px;
-        }
-        .enter{
-            text-align:center;
-        }
-        .clear{
-            clear:both;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ‰∏äËø∞3‰∏™metaÊ†áÁ≠æ*ÂøÖÈ°ª*ÊîæÂú®ÊúÄÂâçÈù¢Ôºå‰ªª‰ΩïÂÖ∂‰ªñÂÜÖÂÆπÈÉΩ*ÂøÖÈ°ª*Ë∑üÈöèÂÖ∂ÂêéÔºÅ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Áî®Êà∑Ê≥®ÂÜåÈ°µÈù¢</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-<div id="myform">
-    <center><h3>¥¥Ω®–¬”√ªß</h3></center>
-    <form method="post" name="myForm" id="" action="register.php">
-        <fieldset>
-            <legend>”√ªß◊¢≤·</legend>
-            <div>
-                <label for="Name">”√ªß√˚</label>
-                <input type="text" name="username" class="input" id="username" size="20" maxlength="30"/>
-                *(ø… ‰»Î◊÷ƒ∏ ˝◊Èœ¬ªÆœﬂ)<br>
-            </div>
-            <div>
-                <label for="password"> ‰»Î√‹¬Î</label>
-                <input type="password" name="password" class="input" id="password" size="18" maxlength="15"/>
-                *(≥§∂»≤ªƒ‹≥¨π˝15∏ˆ◊÷∑˚)<br>
-            </div>
-            <div class="enter">
-                <input name="submit" type="submit" class="buttm" value="Ã·Ωª"/>
-            </div>
-        </fieldset>
+
+<div class="container">
+
+    <form class="form-signin" action="register.php" method="POST">
+        <h2 class="form-signin-heading">Ê≥®ÂÜåË¥¶Êà∑</h2>
+        <label for="inputUsername" class="sr-only">username</label>
+        <input type="text" id="username" class="form-control" name="username"  onkeyup="this.value.replace(/^ +| +$/g,'')" placeholder="ËØ∑ËæìÂÖ•Â≠¶Âè∑" required autofocus>
+        <label for="inputPassword" class="sr-only" name="password">password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="ËØ∑ËæìÂÖ•ÂØÜÁ†Å" required>
+        <button name="submit" class="btn btn-lg btn-primary btn-block" type="submit">Á´ãÂç≥Ê≥®ÂÜå</button>
     </form>
-    <br>
-</div>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
