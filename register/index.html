@@ -21,7 +21,8 @@
     <link href="signin.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -38,7 +39,8 @@
     <form class="form-signin" action="register.php" method="POST">
         <h2 class="form-signin-heading">注册账户</h2>
         <label for="inputUsername" class="sr-only">username</label>
-        <input type="text" id="username" class="form-control" name="username"  onkeyup="this.value.replace(/^ +| +$/g,'')" placeholder="请输入学号" required autofocus>
+        <input type="text" id="username" class="form-control" name="username"
+               onkeyup="this.value.replace(/^ +| +$/g,'')" placeholder="请输入学号" required autofocus>
         <label for="inputPassword" class="sr-only" name="password">password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码" required>
         <button name="submit" class="btn btn-lg btn-primary btn-block" type="submit">立即注册</button>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>用户登录页面</title>
+    <title>南滨校园虚拟交互平台 - 统一认证</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -21,34 +21,35 @@
     <link href="signin.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
+<div class="container">
 
-      <form class="form-signin" action="login.php" method="POST">
-        <h2 class="form-signin-heading">请登录</h2>
+    <form class="form-signin" action="login.php" method="POST">
+        <h4 class="form-signin-heading">南滨校园虚拟交互平台 - 统一认证</h4>
         <label for="inputUsername" class="sr-only">username</label>
         <input type="text" id="username" class="form-control" name="username" placeholder="请输入用户名" required autofocus>
         <label for="inputPassword" class="sr-only" name="password">password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
         <a href="../register/index.html">没有账号?注册一个</a>
-      </form>
+    </form>
 
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
 </html>
