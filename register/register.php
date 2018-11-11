@@ -5,10 +5,10 @@ session_start();
 
 include('../config.php');
 
-// 禁止直接访问register.php
 if (!isset($_POST['submit'])) {
-    echo "<script>alert('禁止非法访问!');parent.location.href='index.html';</script>";
+    header("Location:../index.php");
 }
+
 
 $username = htmlentities($_POST['username']);
 $password = $_POST['password'];
