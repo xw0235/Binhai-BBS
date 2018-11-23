@@ -6,7 +6,7 @@ header("Content-Type: text/html;charset=utf-8");
 session_start();
 
 $username = htmlspecialchars($_POST['username']);
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 
 function redirect($url, $msg) {
     echo "<br>";

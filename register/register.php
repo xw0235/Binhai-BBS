@@ -11,7 +11,7 @@ if (!isset($_POST['submit'])) {
 
 
 $username = htmlentities($_POST['username']);
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 
 
 // 判断用户是否存在

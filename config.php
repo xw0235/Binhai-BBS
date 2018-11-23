@@ -6,7 +6,7 @@ header("Content-Type: text/html;charset=utf-8");
 date_default_timezone_set("PRC");   //系统使用北京时间
 
 define('DBHOST', '127.0.0.1');
-define('DBNAME', 'bbsnanbin'); //数据库名称
+define('DBNAME', 'binhai_bbs'); //数据库名称
 define('DBUSER', 'root'); //数据库用户名
 define('DBPWD', ''); //数据库密码
 
