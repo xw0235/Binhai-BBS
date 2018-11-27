@@ -7,50 +7,52 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
-
-    <title>南滨校园虚拟交互平台 - 统一认证</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../assets/css/signin.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]>
-    <script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <title>虚拟校园平台 - 注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/xiaoyuan.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/css.css">
     <script src="../assets/js/html5shiv.min.js"></script>
     <script src="../assets/js/respond.min.js"></script>
-    <![endif]-->
 </head>
-
 <body>
+<div id="header">
+    <div id="a1" class="auto">
+        <div class="logo1">
+            <h1>
+                <img width="135" src="../images/tupian/xiaohuigai.jpg"/>
+            </h1>
+        </div>
+        <div class="logo2">
+            <h1>
+                <img width="850" src="../images/tupian/timu.jpg"/>
+            </h1>
+        </div>
+    </div>
+    <div id="a2" class="auto">
+    </div>
+    <div id="a3" class="auto">
+        <div class="left">
+            <dl>
+                <dt>登录</dt>
+                <form class="form-signin" action="login.php" method="POST">
+                    <input type="text" id="username" class="form-control" name="username" placeholder="请输入学号" required
+                           autofocus>
+                    <br>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码"
+                           required>
+                    <div class="login-button-box">
+                        <button class="login-button-box" type="submit" name="submit">登录</button>
+                        <a href="../register/index.html">还没账号? 立即注册</a>
+                    </div>
+                </form>
+            </dl>
+        </div>
 
-<div class="container">
-
-    <form class="form-signin" action="login.php" method="POST">
-        <h4 class="form-signin-heading">南滨校园虚拟交互平台 - 统一认证</h4>
-        <label for="inputUsername" class="sr-only">username</label>
-        <input type="text" id="username" class="form-control" name="username" placeholder="请输入用户名" required autofocus>
-        <label for="inputPassword" class="sr-only" name="password">password</label>
-        <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-        <a href="../register/index.html">没有账号?注册一个</a>
-    </form>
-
-</div> <!-- /container -->
-
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/jquery.min.js"><\/script>')</script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
-</html>
 
+</html>

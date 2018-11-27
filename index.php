@@ -11,92 +11,92 @@ session_start();
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-
-    <title>南滨校园虚拟交互平台</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/navbar-fixed-top.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]>
-    <script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <title>虚拟校园平台</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/xiaoyuan.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/css.css">
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
 </head>
-
 <body>
-
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.php">南滨校园虚拟交互平台</a>
+<div id="header">
+    <div id="a1" class="auto">
+        <div class="logo1">
+            <h1>
+                <img width="135" src="images/tupian/xiaohuigai.jpg"/>
+            </h1>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">首页</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+        <div class="logo2">
+            <h1>
+                <img width="850" src="images/tupian/timu.jpg"/>
+            </h1>
+        </div>
+    </div>
+    <div id="a2" class="auto">
+    </div>
+    <div id="a3" class="auto">
+        <div class="left">
+            <dl>
+                <dt>更新日志</dt>
+                <dd class="txt">2018年11月27日</dd>
+                <dd class="txt">- 把学长给的和自己做的整合了一下</dd>
+                <dd class="txt">bug：</dd>
+                <dd class="txt">登录和注册页面的footer显示的位置不正确</dd>
+            </dl>
+        </div>
+        <div class="left">
+            <dl>
+                <!--
+                <dd class="ckgd"><a href="login/index.html">登陆</a></dd>
+                <br>
+                <dd class="ckgd"><a href="register/index.html">注册</a></dd>
+                -->
                 <?php
                 if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-                    echo "<li><a herf=''>" . $_SESSION['username'] . "</a></li><li><a href=\"./user/index.php\">个人中心</a></li><li><a href=\"./login/loginout.php\">注销</a></li>";
+                    echo "<dd class=\"ckgd\"><a href='user/index.php'>个人中心</a></dd><br>";
+                    echo "<dd class=\"ckgd\"><a href='login/loginout.php'>退出登陆</a></dd>";
                 } else {
-                    echo "<li><a href='./login/index.html'>登陆</a></li><li><a href='./register/index.html'>注册</a></li>";
+                    echo "<dd class=\"ckgd\"><a href=\"login/index.html\">登陆</a></dd><br><dd class=\"ckgd\"><a href=\"register/index.html\">注册</a></dd>";
                 }
                 ?>
-
-            </ul>
-        </div><!--/.nav-collapse -->
+            </dl>
+        </div>
     </div>
-</nav>
-
-<div class="container">
-
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <p># 准备实现啥功能？</p>
-        <p>- 添加几个管理员账号</p>
-        <p>- 用户注册时需要管理员认证 (邮箱认证)</p>
-
-        <hr/>
-        <hr/>
-        <p>下面这里放AR实景, 暂时还没有...</p>
-        <p>不过可以用百度地图</p>
-        <a href="map.html">南开大学滨海学院 - 百度地图</a>
-        <!-- 调用百度地图API -->
-        <!--  <iframe src="./map.html" width="600" height="300" frameborder="0" scrolling="no"></iframe> -->
-
+</div>
+<div id="main">
+    <div id="main1">
+        <div id="wrap">
+            <div id="leftb">
+                <div class="leftt1">
+                    <h2>校园全景图</h2>
+                </div>
+                <div id="html_1">
+                    <iframe align="center" width="1350" height="750" src="images/7/7.html" frameborder="no" border="0"
+                            marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-</div> <!-- /container -->
+<div id="footer">
+    <p class="f1">
+        <a href="index.php" target="_black">首页</a>
+        <a href="http://binhai.nankai.edu.cn/" target="_black">校园</a>
+        <a class="last" href="#" target="_black">联系我们</a>
+    </p>
+    <p>
+        Copyright (c) 2018 | 嘿嘿嘿
+    </p>
+</div>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="assets/js/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
 </body>
 </html>
